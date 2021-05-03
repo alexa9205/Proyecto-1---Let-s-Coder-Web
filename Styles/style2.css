@@ -1,0 +1,268 @@
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 80vh;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    margin: 2px;  
+    background-color: rgb(238, 222, 200);
+}
+
+/*  menú, cabecera, logo  - HOME*/
+nav a{
+  
+    
+    text-decoration:none;
+    color:inherit;
+    font-size:14px; 
+    } 
+    nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color:rgb(0, 0, 0);
+    border:2px solid rgb(20, 6, 223);
+    text-align:center;
+    color:rgb(179, 179, 216);
+    font-weight: 800;
+    } 
+    nav li:hover{
+    background-color:rgb(7, 10, 175);
+    color:rgb(249, 249, 252);
+    }  
+    header {
+        background: url(/images/background3.jpg);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+    }
+    header .cabecera{
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        color: rgb(18, 3, 83);
+        text-shadow: 4px 4px 4px rgba(218, 255, 11, 0.918);
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+        
+        
+    }
+    
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    /* Animacion H1 */
+
+    h1{
+        
+            animation-duration: 3s;
+            animation-name: slidein;
+            
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+    
+    
+    .cabecera .logo{
+        margin: auto;
+        height: 170px;
+        width: 100px;
+        position: relative;
+        top: -70px;
+        left: -5%;
+        border: 7px solid rgb(5, 5, 158);
+        box-shadow: 9px solid blue;
+
+    }
+ /* Proximas fechas del curso */
+
+ .titulo_fechas,
+ .conocenos{
+     font-weight: 900;
+     text-align: center;
+     
+}
+
+button{
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 6px 3px  rgb(18, 3, 158);
+    background-color: rgba(233, 130, 130, 0.836);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.fechas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 80px auto 100px;
+}
+
+.curso,
+.curso2{
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso2 > p{
+margin-left: 15px;
+
+}
+
+.curso:nth-of-type(1),
+.curso:nth-of-type(2)
+{
+    border-bottom: 4px  dashed solid gray;
+    
+}
+
+.fechas_bold1{
+    font-size: 250%;
+}
+
+.fechas_bold1,
+.fechas_bold2{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.fecha{
+    margin: 0 25px 0 5px;
+
+}
+
+.fecha p,
+.modalidad p{
+    margin: 1px;
+}
+
+.modalidad{
+    margin: 1px;
+    margin-right: 50px;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: auto;
+    
+}
+.ordenador{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin: 60px;
+    text-align: center;
+    border: 16px groove rgb(0, 42, 105); 
+    padding:2px;
+}
+/* Conocenos - Mentores */
+
+.info_mentores{
+    text-align: center;
+    margin: 80px auto;
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 40%;
+    font-weight: 600;
+    
+}
+  
+.mentores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imagen_mentor_circulo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+ .imagen_mentor_circulo:hover{
+    border: 10px solid blue;
+    transform: scale(1.3); 
+    transition: transform 2s;
+} 
+
+.mentor1,
+.mentor2,
+.mentor3{
+    font-size: 170%;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+.descripcion_mentor1,
+.descripcion_mentor2,
+.descripcion_mentor3 {
+    text-align: center;
+    margin: 30px auto;
+    line-height: 1.5em;
+    font-size: 16px;
+    position: relative;
+    width: 30%;   
+    font-weight: 600;
+}
+/* .mentores p:hover{
+    border: 4px solid groove;
+    font-weight: 600;
+    background-color: coral;
+    transform: scale(1.1)
+} */
+
+/* CONTACTO */ 
+.contacto,
+.telefono,
+.mail{
+    text-align: center;
+    height: 20%;
+    font-size: 16px;
+}
+.contacto1{
+    font-size: 19px;
+    text-align: center;
+}
+.boton{
+    padding: 5px 15px;
+    border: 0;
+    margin: 20px auto;
+    border-radius: 1px;
+    box-shadow: 3px 3px  rgb(18, 3, 158);
+    background-color: rgba(219, 157, 157, 0.836);
+    font-weight: 600;
+    font-size: 16px;
+    
+}
