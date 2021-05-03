@@ -236,12 +236,6 @@ margin-left: 15px;
     width: 30%;   
     font-weight: 600;
 }
-/* .mentores p:hover{
-    border: 4px solid groove;
-    font-weight: 600;
-    background-color: coral;
-    transform: scale(1.1)
-} */
 
 /* CONTACTO */ 
 .contacto,
@@ -266,3 +260,53 @@ margin-left: 15px;
     font-size: 16px;
     
 }
+
+/* TABLAS */ 
+
+.tabla_alumnos{
+    margin-top: 5%;
+    font-size: 23px;
+    text-align: center;
+    color: rgb(8, 8, 161);
+    font-weight: 800;
+    text-shadow: 2px 2px 2px yellow;
+}
+/*table th {
+    background-color: yellow; 
+}
+
+table tr:nth-child(odd){
+    background-color: grey;
+}
+
+table tr:nth-child(even) {
+    background-color: pink;
+}*/
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+table { 
+    margin: auto; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 18px;       
+    width: 680px; 
+    text-align: left;    
+    border-collapse: collapse; 
+}
+
+th {font-size: 13px;     
+    font-weight: normal;     
+    padding: 8px;     
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    
+    border-bottom: 1px solid #fff; 
+    color: #039; 
+}
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; }
+
+tr:hover td { background: #d0dafd; color: #339; }
