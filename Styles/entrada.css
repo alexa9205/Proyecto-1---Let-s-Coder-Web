@@ -19,38 +19,40 @@
 }
 
 
-h1 a {
+button{
   position: relative;
   top: 120px;
-  left: 70%;
-  font-size: 70px;
-  color:rgb(9, 9, 92);
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 4px 4px 4px rgba(218, 255, 11, 0.918);
+  left: 35%;
+  width: 420px;
+  height: 150px;
+  background-color: rgba(15, 15, 124, 0.815);
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  border-radius: 45px;
 }
-
+button a{
+  color: black;
+  font-weight: 800;
+}
 .contenedor p{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     position: relative;
-    top: -50px;
-    left: -25%;
+    top: -30px;
+    left: -15%;
     text-shadow: 4px 4px 4px rgba(218, 255, 11, 0.918);
 }
 .logo1{
     position: relative;
     width: 100px;
-    width: 100px;
-    left: 180px;
+    left: 150px;
     border: 2px solid rgb(5, 5, 158);
 }
 .logo2{
     position: relative;
     width: 100px;
-    width: 100px;
-    left: 480px;
+    left: 820px;
     border: 2px solid rgb(5, 5, 158);
 }
 .pop-over {
