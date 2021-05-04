@@ -261,7 +261,7 @@ margin-left: 15px;
     
 }
 
-/* TABLAS */ 
+/* TABLAS info.html */ 
 
 .tabla_alumnos{
     margin-top: 5%;
@@ -278,7 +278,7 @@ table {
     margin-bottom: 30px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 15px;       
-    width: 680px; 
+    width: 980px; 
     text-align: left;    
     border-collapse: collapse; 
     border-right: 4px solid rgb(0, 0, 0);
@@ -306,4 +306,137 @@ td {
 tr:hover td { 
     background: #a9aaaf; 
     color: rgb(0, 0, 0); 
+}
+
+/* LISTA  en info.html */
+.aprender_titulo,
+.horario_dia{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.lista1,
+.lista2{
+    counter-reset: none; 
+    list-style:none;
+    *list-style-type: style none;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em auto;
+    margin-left: 9%;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    width: 80%;
+}
+
+.lista1 ol {
+    margin: 0 0 0 2em; 
+}
+
+.lista1 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.lista1 li:hover{
+    background: #eee;
+}   
+
+.lista1 li:before{
+    content: none;
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lista1 li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.lista1 li:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+.lista1 p{
+    font-weight: 700;
+}
+
+/* LISTA DESCRIPCION */
+
+.lista2 dt {
+    margin: 0 0 0 2em; 
+}
+
+.lista2 dl{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.lista2 dl:hover{
+    background: #eee;
+}   
+
+.lista2 dl:before{
+    content: none;
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lista2 dl:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.lista2 dl:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+.lista2 p{
+    font-weight: 700;
+}
+.horario{
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
