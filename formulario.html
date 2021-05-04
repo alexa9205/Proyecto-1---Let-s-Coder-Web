@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Styles/style2.css" type="text/css">
+    <title>Let´s Coder</title>
+</head>
+<body>
+    <nav>
+        <div class="pag-entera">
+        <ul>
+            <li><a href="home1.html"> Home</a></li>
+            <li><a href="conocenos2.html"> Conócenos</a></li>
+            <li><a href="alumnos.html">Alumnos</a></li>
+            <li><a href="formulario.html">Inscríbete</a></li>
+            <li><a href="contacto2.html"> Contacto </a></li>
+            <li><a href="entrada.html">Salir</a></li>
+        </ul>
+    </div>
+    </nav>
+    <header>
+        <div class="cabecera">
+        <div class="logo">
+    <img src="./images/letscoder-square.jpeg" alt="logo">
+</div>
+    <h1>Let´s Coder</h1>
+</div>
+</header>
+<main>
+    <h2>INSCRIPCIÓN</h2>
+    <form class="form_inscripcion">
+        <div class="nombre_apellido">
+            <legend>Datos Personales</legend>
+		    <label for="nombre">Nombre:</label>
+		    <input type="text" class="iForm" id="nombre" maxlength="30" placeholder="¿Tu nombre?" required/><br/>
+		    <label for="apellidos">Apellidos:</label>
+		    <input type="text" class="iForm" id="apellidos" maxlength="60"placeholder="¿Tus apellidos?" required/><br/>
+        </div>
+        <div class="direccion">
+            <label for="direccion">Dirección:</label>
+		    <input type="text" class="iForm" id="direccion" maxlength="60" placeholder="¿Donde vives?"/><br/>
+        </div>
+        <div class="direccion2">
+            <label for="poblacion">Población:</label>
+            <input type="text" class="iForm" id="poblacion" placeholder="Ej: Zaragoza"/>
+            <label for="provincia">Provincia:</label>
+            <input type="text" class="iForm" id="provincia" placeholder="Ej: Aragón"/><br/>
+            <label for="cpostal">Codigo Postal:</label>
+            <input type="text" class="iForm" id="cpostal" pattern="[0-9]{5}"/><br/>
+        </div>
+        <div class="fecha_nacimiento">
+            <label for="fnacimiento">¿Cuando naciste?</label>
+            <input type="date"  class="iForm" id="fnacimiento" value="2000-01-01">
+        </div>
+        <div class="como_conocio">
+            <legend>¿Como nos conocío?</legend>
+            <input type="checkbox" id="tv" value="first_checkbox"/>
+            <label for="TV">A través de la TV</label>
+			<input type="checkbox" id="google" value="second_checkbox"/>
+			<label for="google">A través de Google</label>
+			<input type="checkbox" id="redes" value="third_checkbox"/>
+			<label for="redes">A través de redes sociales</label>
+			<input type="checkbox" id="otros" value="fourth_checkbox"/>
+			<label for="otros">Otros</label>
+        </div>
+        <div class="cursos_deseado">
+            <legend>¿Qué curso quieres hacer?</legend>
+            <label for="full">Full-Time</label>
+            <input type="checkbox" id="full" value="primeraopcion">
+            <label for="part">Part-Time</label>
+            <input type="checkbox" id="full" value="primeraopcion">
+        </div>
+        <div class="localizacion">
+            <legend>¿Donde quieres hacerlo?</legend>
+            <select>
+                <option class="opcionlocalizacion">Elige una opción</option>
+                <option class="opcionlocalizacion">Barcelona</option>
+                <option class="opcionlocalizacion">Madrid</option>
+                <option class="opcionlocalizacion">Zaragoza</option>
+                <option class="opcionlocalizacion">Sevilla</option>
+            </select>
+        </div>
+    </form>

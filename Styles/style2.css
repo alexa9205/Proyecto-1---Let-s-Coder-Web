@@ -95,6 +95,34 @@ nav a{
         box-shadow: 9px solid blue;
 
     }
+
+    footer {
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%); 
+        height: 100px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        border-top: 2px solid rgba(0, 0, 0, 0.089);
+        margin-top: 5%;
+    }
+    
+    .pie_imagenes {
+        height: 99px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .fotoredsocial {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+    }
+    .textofooter{
+        font-weight: 700;
+    }
+
  /* Proximas fechas del curso */
 
  .titulo_fechas,
@@ -312,20 +340,29 @@ tr:hover td {
 .aprender_titulo,
 .horario_dia{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
+    margin-bottom: 3%;
+    text-decoration: underline;
 }
 .lista1,
 .lista2{
-    counter-reset: none; 
     list-style:none;
-    *list-style-type: style none;
     font: 15px 'trebuchet MS', 'lucida sans';
     padding: 0;
-    margin-bottom: 4em auto;
-    margin-left: 9%;
+    margin:auto;
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
-    width: 80%;
+    width: 90%; 
+}
+.lista1{
+    display: flex;
+    
+}
+.lista_html,
+.lista_css{
+    display: flexbox;
+    flex-direction: row;
+    width: 46%;
 }
 
 .lista1 ol {
@@ -348,35 +385,6 @@ tr:hover td {
     background: #eee;
 }   
 
-.lista1 li:before{
-    content: none;
-    counter-increment: li;
-    position: absolute; 
-    left: -2.5em;
-    top: 50%;
-    margin-top: -1em;
-    background: #fa8072;
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.lista1 li:after{
-    position: absolute; 
-    content: '';
-    border: .5em solid transparent;
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;               
-}
-
-.lista1 li:hover:after{
-    left: -.5em;
-    border-left-color: #fa8072;             
-}
 .lista1 p{
     font-weight: 700;
 }
@@ -391,7 +399,6 @@ tr:hover td {
     position: relative;
     display: block;
     padding: .4em .4em .4em .8em;
-    *padding: .4em;
     margin: .5em 0 .5em 2.5em;
     background: #ddd;
     color: #444;
@@ -403,40 +410,15 @@ tr:hover td {
     background: #eee;
 }   
 
-.lista2 dl:before{
-    content: none;
-    counter-increment: li;
-    position: absolute; 
-    left: -2.5em;
-    top: 50%;
-    margin-top: -1em;
-    background: #fa8072;
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.lista2 dl:after{
-    position: absolute; 
-    content: '';
-    border: .5em solid transparent;
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;               
-}
-
-.lista2 dl:hover:after{
-    left: -.5em;
-    border-left-color: #fa8072;             
-}
 .lista2 p{
     font-weight: 700;
 }
-.horario{
+.lista2 dd{
     margin-left: 3%;
-    margin-top: 1%;
+}
+.horario{
+    margin-left: 4%;
+    margin-top: 4%;
     margin-bottom: 1%;
+    text-decoration: underline;
 }
