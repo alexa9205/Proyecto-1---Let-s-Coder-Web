@@ -421,7 +421,7 @@ tr:hover td {
     }
     .lista_css{
         text-align: justify;
-        font-size: 6pt;
+        font-size: 7pt;
         width: 100px;
         height: 45%;
         padding-left: 30px;
@@ -429,10 +429,24 @@ tr:hover td {
     }
     .lista_html{
         text-align: left;
-        font-size: 8pt;
+        font-size: 7pt;
         width: 120px;
     }
-    
+    .tabla_alumnos{
+        font-size: 14pt;
+        text-align: center;
+    }
+    dl,
+    dt,
+    dd{
+        font-size: 10pt;
+        color: red;
+    }
+    .aprender_titulo,
+    .horario_dia{
+      /*  font-size: 12pt; - no funcióna */
+        color: blue;
+    }
 }
 
 /* LISTA  en info.html */
