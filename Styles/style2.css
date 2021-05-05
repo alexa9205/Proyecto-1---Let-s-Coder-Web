@@ -10,11 +10,11 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
     margin: 2px;
-    background-color: rgb(238, 222, 200);
+    background-image: linear-gradient(135deg, #1305d669 10%, #fd5e086b 100%);
 }
 
 /*  menú, cabecera, logo  - HOME*/
-nav a {
+/*nav a {
 
 
     text-decoration: none;
@@ -36,6 +36,43 @@ nav li {
 nav li:hover {
     background-color: rgb(7, 10, 175);
     color: rgb(249, 249, 252);
+}*/
+/*header /*contenedor{
+    background-image: url("../IMAGES/letscoder-sin-fondo.png");
+    height: 100px; 
+    background-color: rgb(21, 38, 194);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y:bottom;
+    background-position-x: 30px;
+    margin: auto;
+}*/
+
+.menunav /*contenedor-padre*/{
+    height: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:black;
+}
+
+.opcion /*child*/ {
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    background-color: rgb(5, 5, 5);
+    line-height: 67px;
+    margin: 0px 10px 0px 10px;
+}
+
+.menunav a /*texto de los links*/{
+    text-decoration:underline;
+    color: white;
+    font-family: space mono;
+}
+.opcion:hover{
+    background-color: rgb(16, 1, 223);
 }
 
 header {
@@ -47,7 +84,7 @@ header {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    border-radius: 0 0 85% 85% / 30%;
+    border-radius: 0% 0% 85% 85% / 30%;
 }
 
 header .cabecera {
@@ -76,7 +113,7 @@ h1 {
 
 }
 
-/*@keyframes slidein {
+@keyframes slidein {
     from {
         margin-left: 100%;
         width: 300%
@@ -86,7 +123,7 @@ h1 {
         margin-left: 0%;
         width: 100%;
     }
-}*/
+}
 
 
 .cabecera .logo {
@@ -98,6 +135,7 @@ h1 {
     left: -5%;
     border: 7px solid rgb(5, 5, 158);
     box-shadow: 9px solid blue;
+    
 
 }
 
