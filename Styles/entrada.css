@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  background-image: url("../IMAGES/letscoder-sin-fondo.png");
+  height: 100px; 
+  background-color: rgba(144, 143, 153, 0.897);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y:bottom;
+  background-position-x: 30px;
+  margin: auto;
+}
 
 .contenedor {
     min-height: 100vh;
@@ -12,13 +22,11 @@
     scroll-behavior: smooth;
     font-family:'Helvetica Neue', sans-serif;
     position: relative;
-    background-color: rgb(240, 240, 228);
-    
 }
 img.pag_oficial{
   position: relative;
-  width: 750px;
-  height: 600px;
+  width: 55%;
+  height: 40%;
   margin-left: 1%;
   border-radius:50%;
   box-shadow: 0px 0px 15px 15px #0f32d1;

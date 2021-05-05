@@ -13,41 +13,6 @@ body {
     background-image: linear-gradient(135deg, #1305d669 10%, #fd5e086b 100%);
 }
 
-/*  menú, cabecera, logo  - HOME*/
-/*nav a {
-
-
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px;
-}
-
-nav li {
-    display: inline-block;
-    width: 10%;
-    padding: 5px 10px;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(20, 6, 223);
-    text-align: center;
-    color: rgb(179, 179, 216);
-    font-weight: 800;
-}
-
-nav li:hover {
-    background-color: rgb(7, 10, 175);
-    color: rgb(249, 249, 252);
-}*/
-/*header /*contenedor{
-    background-image: url("../IMAGES/letscoder-sin-fondo.png");
-    height: 100px; 
-    background-color: rgb(21, 38, 194);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y:bottom;
-    background-position-x: 30px;
-    margin: auto;
-}*/
-
 .menunav /*contenedor-padre*/{
     height: 99px;
     display: flex;
@@ -98,33 +63,6 @@ header .cabecera {
 
 }
 
-h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 80px;
-    margin-bottom: 20px;
-}
-
-/* Animacion H1 */
-
-h1 {
-
-    animation-duration: 3s;
-    animation-name: slidein;
-
-}
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
 
 .cabecera .logo {
     margin: auto;
@@ -136,7 +74,31 @@ h1 {
     border: 7px solid rgb(5, 5, 158);
     box-shadow: 9px solid blue;
     
+}
 
+@media screen and (max-width: 667px){ /* Media Query para el menú */ 
+    header {
+        height: 130px;
+        background-size: 30%;
+        background-position: top;
+    }
+    .menunav {
+        display: flex;
+        margin: auto;
+        padding-top: 10%;
+        justify-content: center;
+    }
+    .opcion{
+        height: 30px;
+        line-height: 20px;
+    }
+    .imagenes img { 
+        display: flex;
+        margin: auto;
+        padding-top: 10%;
+        justify-content: center;
+        border: none;
+    }
 }
 
 footer {
@@ -165,6 +127,16 @@ footer {
 
 .textofooter {
     font-weight: 700;
+}
+
+@media screen and (max-width: 667px){  /* Media Query para el footer */
+    span {
+        font-size: 12pt;
+    }
+    .footeredsocial{
+        height: 30px;
+        width: 30px;
+    }
 }
 
 /* Proximas fechas del curso */
@@ -260,6 +232,13 @@ button {
     padding: 2px;
 }
 
+@media screen and (max-width: 800px){
+    h2{
+        font-size: 18pt;
+        color: blue;
+    }
+}
+
 /* Conocenos - Mentores */
 
 .info_mentores {
@@ -311,6 +290,37 @@ button {
     font-weight: 600;
 }
 
+@media screen and (max-width: 800px){
+    
+    .imagen_mentor_circulo{
+        height: 100px;
+        width: 100px;
+        margin-top: -40%;
+        margin-left: 10%;
+        border: none;
+    }
+    .mentor1,
+    .mentor2,
+    .mentor3{
+        font-size: 12pt;
+        color: rgb(18, 3, 83);
+    }
+    .descripcion_mentor1,
+    .descripcion_mentor2,
+    .descripcion_mentor3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 10pt;
+    }
+    .info_mentores{
+        width: 300px;
+        font-size: 10pt;
+        text-align: center;
+        
+    }
+}
+
 /* CONTACTO */
 .contacto,
 .telefono,
@@ -335,6 +345,16 @@ button {
     font-weight: 600;
     font-size: 16px;
 
+}
+
+@media screen and (max-width: 800px){ /* Media Query para la pag contacto */
+    .contacto{
+        font-size: 14pt;
+        color: red;
+    }
+    .boton{
+        font-size: 10pt;
+    }
 }
 
 /* TABLAS info.html */
@@ -383,6 +403,36 @@ td {
 tr:hover td {
     background: #a9aaaf;
     color: black;
+}
+
+/* Media query para tabla */
+@media screen and (max-width: 800px){
+    table{
+        width: 50%;
+    }
+    th, td{
+        font-size: 7.5pt;
+        height: 30px;
+        width: 50%;
+    }
+    .lista1{
+        justify-content: space-evenly;
+        margin-top: -30px;
+    }
+    .lista_css{
+        text-align: justify;
+        font-size: 6pt;
+        width: 100px;
+        height: 45%;
+        padding-left: 30px;
+        margin-top: 11px;
+    }
+    .lista_html{
+        text-align: left;
+        font-size: 8pt;
+        width: 120px;
+    }
+    
 }
 
 /* LISTA  en info.html */
