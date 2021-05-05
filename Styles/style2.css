@@ -13,16 +13,22 @@ body {
     background-image: linear-gradient(135deg, #1305d669 10%, #fd5e086b 100%);
 }
 
-.menunav /*contenedor-padre*/{
+.menunav
+
+/*contenedor-padre*/
+    {
     height: 99px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color:black;
+    background-color: black;
 }
 
-.opcion /*child*/ {
+.opcion
+
+/*child*/
+    {
     width: 100px;
     height: 70px;
     text-align: center;
@@ -31,12 +37,16 @@ body {
     margin: 0px 10px 0px 10px;
 }
 
-.menunav a /*texto de los links*/{
-    text-decoration:underline;
+.menunav a
+
+/*texto de los links*/
+    {
+    text-decoration: underline;
     color: white;
     font-family: space mono;
 }
-.opcion:hover{
+
+.opcion:hover {
     background-color: rgb(16, 1, 223);
 }
 
@@ -73,26 +83,31 @@ header .cabecera {
     left: -5%;
     border: 7px solid rgb(5, 5, 158);
     box-shadow: 9px solid blue;
-    
+
 }
 
-@media screen and (max-width: 667px){ /* Media Query para el menú */ 
+@media screen and (max-width: 667px) {
+
+    /* Media Query para el menú */
     header {
         height: 130px;
         background-size: 30%;
         background-position: top;
     }
+
     .menunav {
         display: flex;
         margin: auto;
         padding-top: 10%;
         justify-content: center;
     }
-    .opcion{
+
+    .opcion {
         height: 30px;
         line-height: 20px;
     }
-    .imagenes img { 
+
+    .imagenes img {
         display: flex;
         margin: auto;
         padding-top: 10%;
@@ -129,11 +144,14 @@ footer {
     font-weight: 700;
 }
 
-@media screen and (max-width: 667px){  /* Media Query para el footer */
+@media screen and (max-width: 667px) {
+
+    /* Media Query para el footer */
     span {
         font-size: 12pt;
     }
-    .footeredsocial{
+
+    .footeredsocial {
         height: 30px;
         width: 30px;
     }
@@ -232,8 +250,8 @@ button {
     padding: 2px;
 }
 
-@media screen and (max-width: 800px){
-    h2{
+@media screen and (max-width: 800px) {
+    h2 {
         font-size: 18pt;
         color: blue;
     }
@@ -290,21 +308,23 @@ button {
     font-weight: 600;
 }
 
-@media screen and (max-width: 800px){
-    
-    .imagen_mentor_circulo{
+@media screen and (max-width: 800px) {
+
+    .imagen_mentor_circulo {
         height: 100px;
         width: 100px;
         margin-top: -40%;
         margin-left: 10%;
         border: none;
     }
+
     .mentor1,
     .mentor2,
-    .mentor3{
+    .mentor3 {
         font-size: 12pt;
         color: rgb(18, 3, 83);
     }
+
     .descripcion_mentor1,
     .descripcion_mentor2,
     .descripcion_mentor3 {
@@ -313,11 +333,12 @@ button {
         justify-content: space-around;
         font-size: 10pt;
     }
-    .info_mentores{
+
+    .info_mentores {
         width: 300px;
         font-size: 10pt;
         text-align: center;
-        
+
     }
 }
 
@@ -347,12 +368,15 @@ button {
 
 }
 
-@media screen and (max-width: 800px){ /* Media Query para la pag contacto */
-    .contacto{
+@media screen and (max-width: 800px) {
+
+    /* Media Query para la pag contacto */
+    .contacto {
         font-size: 14pt;
         color: red;
     }
-    .boton{
+
+    .boton {
         font-size: 10pt;
     }
 }
@@ -406,20 +430,24 @@ tr:hover td {
 }
 
 /* Media query para tabla */
-@media screen and (max-width: 800px){
-    table{
+@media screen and (max-width: 800px) {
+    table {
         width: 50%;
     }
-    th, td{
+
+    th,
+    td {
         font-size: 7.5pt;
         height: 30px;
         width: 50%;
     }
-    .lista1{
+
+    .lista1 {
         justify-content: space-evenly;
         margin-top: -30px;
     }
-    .lista_css{
+
+    .lista_css {
         text-align: justify;
         font-size: 7pt;
         width: 100px;
@@ -427,24 +455,28 @@ tr:hover td {
         padding-left: 30px;
         margin-top: 11px;
     }
-    .lista_html{
+
+    .lista_html {
         text-align: left;
         font-size: 7pt;
         width: 120px;
     }
-    .tabla_alumnos{
+
+    .tabla_alumnos {
         font-size: 14pt;
         text-align: center;
     }
+
     dl,
     dt,
-    dd{
+    dd {
         font-size: 10pt;
         color: red;
     }
+
     .aprender_titulo,
-    .horario_dia{
-      /*  font-size: 12pt; - no funcióna */
+    .horario_dia {
+        /*  font-size: 12pt; - no funcióna */
         color: blue;
     }
 }
@@ -587,7 +619,7 @@ form legend {
 }
 
 .nombre_apellido div,
-.curso_deseado div{
+.curso_deseado div {
     display: flex;
     flex-direction: row;
     width: 45%;
@@ -595,54 +627,61 @@ form legend {
 }
 
 .nombre_apellido div input,
-.cursos_deseado div input{
+.cursos_deseado div input {
     flex-grow: 1;
     margin-left: 5px;
 }
-.direccion{
+
+.direccion {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-.direccion input{
+
+.direccion input {
     margin-left: 2px;
     width: 100%;
 }
 
-.como_conocio div{
+.como_conocio div {
     display: flex;
     flex-direction: column;
     width: 45%;
-    align-items:center;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.cursos_deseado{
+.cursos_deseado {
     flex-grow: 1;
 }
-.conocimientos{
+
+.conocimientos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
 }
-.conocimientos div{
+
+.conocimientos div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 10px;
 }
-.texto_usuario{
+
+.texto_usuario {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
 }
-.texto_usuario label{
+
+.texto_usuario label {
     font-size: 16px;
     font-weight: 600;
 }
-.botones_form{
+
+.botones_form {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -650,49 +689,51 @@ form legend {
     margin-top: 10px;
 }
 
-.botones_form div{
+.botones_form div {
     display: flex;
     flex-direction: row;
     width: 100px;
     height: 50px;
 }
 
-.botones_form input{
+.botones_form input {
     background-color: rgba(56, 55, 55, 0.658);
     border-radius: 10px;
     font-size: 16px;
     color: rgb(242, 242, 255);
 }
-.mensaje_form{
+
+.mensaje_form {
     font-size: 14px;
     font-weight: 600;
     margin-top: 10px;
 }
+
 /* Media - queris */
 
 
-/* Respuesta formulario */ 
+/* Respuesta formulario */
 
-.contenedor{
-    width:100%;
-    max-width:600px;
-    padding:25px 50px 10px;
-    border-width:1px;
+.contenedor {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px 50px 10px;
+    border-width: 1px;
     margin: 0 auto;
 }
 
-.contenedor p{
-    width:30%;
-    max-width:300px;
-    padding:25px 10px;
-    border:2px solid rgb(59, 56, 56);
+.contenedor p {
+    width: 30%;
+    max-width: 300px;
+    padding: 25px 10px;
+    border: 2px solid rgb(59, 56, 56);
     border-radius: 20px;
 }
 
 .primero,
-.segundo{
-    text-align:center;
-    margin:auto;
+.segundo {
+    text-align: center;
+    margin: auto;
     font-size: 18px;
     font-weight: 700;
     background-color: rgb(151, 175, 221);
