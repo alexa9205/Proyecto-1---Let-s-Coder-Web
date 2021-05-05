@@ -85,6 +85,24 @@ header .cabecera {
     box-shadow: 9px solid blue;
 
 }
+h1{
+    font-size: 65px;
+    color: black;
+    font-weight: 800;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 @media screen and (max-width: 667px) {
 
@@ -724,7 +742,7 @@ form legend {
 
 .contenedor p {
     width: 30%;
-    max-width: 300px;
+    max-width: 200px;
     padding: 25px 10px;
     border: 2px solid rgb(59, 56, 56);
     border-radius: 20px;
@@ -736,5 +754,17 @@ form legend {
     margin: auto;
     font-size: 18px;
     font-weight: 700;
-    background-color: rgb(151, 175, 221);
+}
+.pag_principal{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton3{
+    
+    background: rgb(163, 121, 121);
+    width: 120px;
+    
+      
 }
