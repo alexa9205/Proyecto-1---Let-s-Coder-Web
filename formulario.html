@@ -42,7 +42,7 @@
                                 required /></div>
                         <div>
                             <label for="apellidos">Apellidos:*</label>
-                            <input type="text" class="iForm" id="apellidos" maxlength="60" placeholder="¿Tus apellidos?"
+                            <input type="text" class="iForm" id="apellidos" maxlength="30" placeholder="¿Tus apellidos?"
                                 required /></div>
                     </div>
                     <div class="direccion">
@@ -108,14 +108,13 @@
                             <label for="google">A través de Google</label>
                             <input type="checkbox" id="google" value="second_checkbox" />
                         </div>
-                        <div>
+                        <div class="RRSS">
                             <label for="redes">A través de RRSS</label>
                             <input type="checkbox" id="redes" value="third_checkbox" />
                             <label for="otros">Otros</label>
                             <input type="checkbox" id="otros" value="fourth_checkbox" />
                         </div>
                     </div>
-                    <div class="cursos_deseado">
                         <legend>¿Qué curso quieres hacer?*</legend>
                         <div>
                             <label for="full">Full-Time</label>
@@ -125,6 +124,8 @@
                             <label for="part">Part-Time</label>
                             <input type="checkbox" id="full" value=" ">
                         </div>
+                    
+                        <div class="donde">
                         <legend>¿Donde quieres hacerlo?*</legend>
                         <div>
                             <select>
@@ -134,10 +135,10 @@
                                 <option class="opcionlocalizacion">Zaragoza</option>
                                 <option class="opcionlocalizacion">Sevilla</option>
                             </select>
-                        </div>
                     </div>
-                    <div class="conocimientos">
+                </div>
                         <legend>¿Tienes conocimientos previos?* </legend>
+                        <div class="conocimientos">
                         <div>
                             <label for="html">HTML</label>
                             <input type="checkbox" id="html">
@@ -163,7 +164,7 @@
             <fieldset>
                 <div class="texto_usuario">
                     <label for="texto">Cuentanos un poco sobre ti y porque quieres hacer un bootcamp:</label>
-                    <textarea id="texto" rows="8" cols="60" maxlength="800"></textarea>
+                    <textarea id="texto" rows="6" cols="40" maxlength="800"></textarea>
                 </div>
             </fieldset>
             <div class="botones_form">

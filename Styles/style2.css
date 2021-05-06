@@ -17,7 +17,7 @@ body {
 
 /*contenedor-padre*/
     {
-    height: 99px;
+    height: 59px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -27,14 +27,15 @@ body {
 
 .opcion
 
-/*child*/
+/*hijo*/
     {
     width: 100px;
-    height: 70px;
+    height: 58px;
     text-align: center;
-    background-color: rgb(5, 5, 5);
-    line-height: 67px;
+    background-color: black;
+    line-height: 57px;
     margin: 0px 10px 0px 10px;
+    text-transform: uppercase;
 }
 
 .menunav a
@@ -131,6 +132,7 @@ h1{
         padding-top: 10%;
         justify-content: center;
         border: none;
+        
     }
 }
 
@@ -304,6 +306,7 @@ button {
     border: 10px solid blue;
     transform: scale(1.3);
     transition: transform 2s;
+    filter: sepia(80%);
 }
 
 .mentor1,
@@ -445,7 +448,7 @@ td {
 tr:hover td {
     background: #a9aaaf;
     color: black;
-}
+} 
 
 /* Media query para tabla */
 @media screen and (max-width: 800px) {
@@ -459,15 +462,18 @@ tr:hover td {
         height: 30px;
         width: 50%;
     }
+    
 
     .lista1 {
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         margin-top: -30px;
+        align-items: center;
     }
 
     .lista_css {
-        text-align: justify;
-        font-size: 7pt;
+        font-size: 8.5pt;
         width: 100px;
         height: 45%;
         padding-left: 30px;
@@ -475,9 +481,8 @@ tr:hover td {
     }
 
     .lista_html {
-        text-align: left;
-        font-size: 7pt;
-        width: 120px;
+        font-size: 8.5pt;
+        width: 150px;
     }
 
     .tabla_alumnos {
@@ -489,7 +494,6 @@ tr:hover td {
     dt,
     dd {
         font-size: 10pt;
-        color: red;
     }
 
     .aprender_titulo,
@@ -511,6 +515,7 @@ tr:hover td {
 
 .lista1,
 .lista2 {
+    list-style-type: disc;
     font: 15px 'trebuchet MS', 'lucida sans';
     padding: 0;
     margin: auto;
@@ -545,10 +550,6 @@ tr:hover td {
     transition: all .3s ease-out;
 }
 
-.lista1 ol:hover {
-    background: rgb(150, 144, 144);
-}
-
 .lista1 p {
     font-weight: 700;
 }
@@ -568,10 +569,6 @@ tr:hover td {
     color: #444;
     text-decoration: none;
     transition: all .3s ease-out;
-}
-
-.lista2 dl:hover {
-    background: #eee;
 }
 
 .lista2 p {
@@ -598,7 +595,7 @@ tr:hover td {
 }
 
 form {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     text-align: left;
     color: black;
@@ -619,16 +616,12 @@ form {
 form legend {
     font-weight: bold;
     color: rgb(3, 0, 172);
-    padding: 0 0.5em;
     margin-left: -10px;
 }
 
 .nombre_apellido,
-.direccion,
 .direccion2,
 .fecha_nacimiento,
-.como_conocio,
-.cursos_deseado,
 .localizacion {
     display: flex;
     flex-direction: row;
@@ -645,46 +638,53 @@ form legend {
 }
 
 .nombre_apellido div input,
-.cursos_deseado div input {
-    flex-grow: 1;
+.cursos_deseado div input{
+   /* flex-grow: 1; */
     margin-left: 5px;
 }
 
 .direccion {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    margin-top: 10px;
 }
 
 .direccion input {
     margin-left: 2px;
-    width: 100%;
+    width: 50%;
+    align-items: center;
+}
+.direccion2 div select{
+    width: 60%;
+    margin-left: 18px;
 }
 
 .como_conocio div {
     display: flex;
-    flex-direction: column;
-    width: 45%;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
-.cursos_deseado {
-    flex-grow: 1;
+.como_conocio input{
+    margin-right: 10%;
 }
+
+.curso_deseado div{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .conocimientos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 10px;
+    justify-content: space-between;
 }
 
 .conocimientos div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
+    flex-grow: 1;
 }
 
 .texto_usuario {
