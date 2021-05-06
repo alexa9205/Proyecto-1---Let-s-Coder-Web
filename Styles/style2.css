@@ -38,10 +38,10 @@ body {
     text-transform: uppercase;
 }
 
-.menunav a
+
 
 /*texto de los links*/
-    {
+.menunav a{
     text-decoration: underline;
     color: white;
     font-family: space mono;
@@ -105,36 +105,6 @@ h1{
     }
   }
 
-@media screen and (max-width: 667px) {
-
-    /* Media Query para el menú */
-    header {
-        height: 130px;
-        background-size: 30%;
-        background-position: top;
-    }
-
-    .menunav {
-        display: flex;
-        margin: auto;
-        padding-top: 10%;
-        justify-content: center;
-    }
-
-    .opcion {
-        height: 30px;
-        line-height: 20px;
-    }
-
-    .imagenes img {
-        display: flex;
-        margin: auto;
-        padding-top: 10%;
-        justify-content: center;
-        border: none;
-        
-    }
-}
 
 footer {
     background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
@@ -451,57 +421,7 @@ tr:hover td {
 } 
 
 /* Media query para tabla */
-@media screen and (max-width: 800px) {
-    table {
-        width: 50%;
-    }
 
-    th,
-    td {
-        font-size: 7.5pt;
-        height: 30px;
-        width: 50%;
-    }
-    
-
-    .lista1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: -30px;
-        align-items: center;
-    }
-
-    .lista_css {
-        font-size: 8.5pt;
-        width: 100px;
-        height: 45%;
-        padding-left: 30px;
-        margin-top: 11px;
-    }
-
-    .lista_html {
-        font-size: 8.5pt;
-        width: 150px;
-    }
-
-    .tabla_alumnos {
-        font-size: 14pt;
-        text-align: center;
-    }
-
-    dl,
-    dt,
-    dd {
-        font-size: 10pt;
-    }
-
-    .aprender_titulo,
-    .horario_dia {
-        /*  font-size: 12pt; - no funcióna */
-        color: blue;
-    }
-}
 
 /* LISTA  en info.html */
 .aprender_titulo,
@@ -634,13 +554,13 @@ form legend {
     display: flex;
     flex-direction: row;
     width: 45%;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .nombre_apellido div input,
 .cursos_deseado div input{
    /* flex-grow: 1; */
-    margin-left: 5px;
+    margin-left: 3px;
 }
 
 .direccion {
@@ -767,4 +687,119 @@ form legend {
     width: 120px;
     
       
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+
+  /* .imagenes img {
+        display: flex;
+        margin: auto;
+        padding-top: 10%;
+        justify-content: center;
+        border: none;
+        
+    } */
+
+    /* Media Query para la pag contacto */
+    .contacto {
+        font-size: 14pt;
+        color: red;
+    }
+
+    .boton {
+        font-size: 10pt;
+    }
+
+    table {
+        width: 50%;
+    }
+
+    th,
+    td {
+        font-size: 7.5pt;
+        height: 30px;
+        width: 50%;
+    }
+    
+
+    .lista1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: -30px;
+        align-items: center;
+    }
+
+    .lista_css {
+        font-size: 8.5pt;
+        width: 100px;
+        height: 45%;
+        padding-left: 30px;
+        margin-top: 11px;
+    }
+
+    .lista_html {
+        font-size: 8.5pt;
+        width: 150px;
+    }
+
+    .tabla_alumnos {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    dl,
+    dt,
+    dd {
+        font-size: 10pt;
+    }
+
+    .aprender_titulo,
+    .horario_dia {
+        font-size: 12pt;
+        color: blue;
+    }
+
+    .nombre_apellido,
+    .direccion,
+    .direccion2{
+      /*  flex-direction: column;*/
+        flex-wrap: wrap;
+    }
+    .nombre_apellido input{
+        flex-wrap: wrap;
+    }
+    form{
+        width: 90%;
+    }
+    
+}
+
+
+@media screen and (max-width: 667px){
+    header {
+        height: 200px;
+        background-size: 30%;
+        background-position: top;
+    }
+    .menunav{
+        display: flex;
+        margin: auto;
+        padding-top: 10%;
+        justify-content: start;
+    }
+    
+    .opcion{
+        height: 30px;
+        line-height: 10px;
+        font-size: 8pt;
+    }
+    .titulo_fechas{
+        font-size: 12pt;
+    }
+    
+    
 }
