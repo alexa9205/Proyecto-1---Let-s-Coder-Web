@@ -144,12 +144,6 @@ button a {
   width: 100%;
 }
 
-.pop-over p {
-  padding: 50px;
-  opacity: 0;
-  animation: 1s fadeIn ease forwards 1s;
-}
-
 .pop-over .close::after {
   right: 0;
   top: 0;
