@@ -35,6 +35,10 @@ img.pag_oficial {
   filter: sepia(60%);
   left: 5%;
 }
+img.pag_oficial:hover{
+  transform: scale(1.2);
+    transition: transform 2s;
+}
 
 button {
   position: relative;
