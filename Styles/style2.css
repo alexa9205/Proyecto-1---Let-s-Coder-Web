@@ -134,19 +134,6 @@ footer {
     font-weight: 700;
 }
 
-@media screen and (max-width: 667px) {
-
-    /* Media Query para el footer */
-    span {
-        font-size: 12pt;
-    }
-
-    .footeredsocial {
-        height: 30px;
-        width: 30px;
-    }
-}
-
 /* Proximas fechas del curso */
 
 .titulo_fechas,
@@ -299,40 +286,6 @@ button {
     font-weight: 600;
 }
 
-@media screen and (max-width: 800px) {
-
-    .imagen_mentor_circulo {
-        height: 100px;
-        width: 100px;
-        margin-top: -40%;
-        margin-left: 10%;
-        border: none;
-    }
-
-    .mentor1,
-    .mentor2,
-    .mentor3 {
-        font-size: 12pt;
-        color: rgb(18, 3, 83);
-    }
-
-    .descripcion_mentor1,
-    .descripcion_mentor2,
-    .descripcion_mentor3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        font-size: 10pt;
-    }
-
-    .info_mentores {
-        width: 300px;
-        font-size: 10pt;
-        text-align: center;
-
-    }
-}
-
 /* CONTACTO */
 .contacto,
 .telefono,
@@ -357,19 +310,6 @@ button {
     font-weight: 600;
     font-size: 16px;
 
-}
-
-@media screen and (max-width: 800px) {
-
-    /* Media Query para la pag contacto */
-    .contacto {
-        font-size: 14pt;
-        color: red;
-    }
-
-    .boton {
-        font-size: 10pt;
-    }
 }
 
 /* TABLAS info.html */
@@ -419,8 +359,6 @@ tr:hover td {
     background: #a9aaaf;
     color: black;
 } 
-
-/* Media query para tabla */
 
 
 /* LISTA  en info.html */
@@ -545,7 +483,7 @@ form legend {
 .localizacion {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between; */
     margin-top: 10px;
 }
 
@@ -554,12 +492,10 @@ form legend {
     display: flex;
     flex-direction: row;
     width: 45%;
-    /* align-items: center; */
 }
 
 .nombre_apellido div input,
 .cursos_deseado div input{
-   /* flex-grow: 1; */
     margin-left: 3px;
 }
 
@@ -647,9 +583,6 @@ form legend {
     margin-top: 10px;
 }
 
-/* Media - queris */
-
-
 /* Respuesta formulario */
 
 .contenedor {
@@ -682,27 +615,79 @@ form legend {
   align-items: center;
 }
 .boton3{
-    
     background: rgb(163, 121, 121);
     width: 120px;
     
-      
 }
 
 
 @media screen and (max-width: 800px) {
+    /* Media querys home */
+    h2 {
+        font-size: 16px;  /* todos h2 de la pagina */
+    }
 
-
-
-  /* .imagenes img {
+    .curso,
+    .fecha,
+    .modalidad,
+    .curso2{
+        font-size: 12px;
+    }
+    .modalidad button{
+        width: 20%;
+    }
+    .imagenes {
         display: flex;
-        margin: auto;
-        padding-top: 10%;
-        justify-content: center;
+        flex-direction: column;
+    }
+    .imagenes img{
+        flex-wrap: wrap;
         border: none;
-        
-    } */
+        width: 60%;
+    }
+   
 
+
+    /* media querys conocenos.html */
+    .imagen_mentor_circulo {
+        height: 100px;
+        width: 100px;
+        margin-top: 30%;
+        margin-left: 10%; 
+    }
+
+    
+    .imagen_mentor_circulo:hover{
+        border: none;
+    }
+
+    .mentores{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mentor1,
+    .mentor2,
+    .mentor3 {
+        font-size: 12pt;
+        color: rgb(18, 3, 83);
+        margin-bottom: -10%;
+    }
+
+    .descripcion_mentor1,
+    .descripcion_mentor2,
+    .descripcion_mentor3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info_mentores {
+        width: 300px;
+        font-size: 14px;
+        text-align: center;
+
+    }
+   
     /* Media Query para la pag contacto */
     .contacto {
         font-size: 14pt;
@@ -712,9 +697,15 @@ form legend {
     .boton {
         font-size: 10pt;
     }
+    
+    /* Media query pag alumnos */ 
 
     table {
         width: 50%;
+    }
+    .tabla_alumnos {
+        font-size: 14pt;
+        text-align: center;
     }
 
     th,
@@ -730,61 +721,84 @@ form legend {
         flex-direction: column;
         justify-content: space-evenly;
         margin-top: -30px;
-        align-items: center;
     }
 
     .lista_css {
-        font-size: 8.5pt;
-        width: 100px;
+        font-size: 10pt;
+        width: 90%;
         height: 45%;
         padding-left: 30px;
         margin-top: 11px;
     }
 
     .lista_html {
-        font-size: 8.5pt;
-        width: 150px;
+        flex-wrap: wrap;
+        width: 90%;
+        font-size: 10pt;
     }
-
-    .tabla_alumnos {
-        font-size: 14pt;
-        text-align: center;
-    }
-
+    
     dl,
     dt,
     dd {
         font-size: 10pt;
     }
 
+    /* Media query formulario */
+
     .aprender_titulo,
     .horario_dia {
-        font-size: 12pt;
-        color: blue;
+        font-size: 10pt;
     }
 
     .nombre_apellido,
     .direccion,
-    .direccion2{
-      /*  flex-direction: column;*/
+    .direccion2,
+    .fecha_nacimiento{
         flex-wrap: wrap;
     }
-    .nombre_apellido input{
-        flex-wrap: wrap;
+    .nombre_apellido{
+        flex-direction: column;
     }
+    .nombre_apellido div{
+        margin-bottom: 5px;
+    }
+
+    .direccion2 select{
+        width: 20%;
+        margin-bottom: 5px;
+    }
+    .fecha_nacimiento div{
+        margin-bottom: 5px;
+    }
+
+    
     form{
         width: 90%;
     }
-    
+
+    /* Media querys para contacto.html */
+
+    .contacto {
+        font-size: 15px;
+    }
+
+    .boton {
+        font-size: 10pt;
+    }
+
+    /* media querys felicidades.html*/
+    .boton3{
+        width: 20%;
+    }
+    .boton3 a{
+        font-size: 13px;
+    }
+
 }
 
 
+
 @media screen and (max-width: 667px){
-    header {
-        height: 200px;
-        background-size: 30%;
-        background-position: top;
-    }
     .menunav{
         display: flex;
         margin: auto;
@@ -797,9 +811,25 @@ form legend {
         line-height: 10px;
         font-size: 8pt;
     }
-    .titulo_fechas{
-        font-size: 12pt;
+  
+    header .logo{
+        display: none;
     }
-    
+    header h1{
+        font-size: 22px;
+    }
+    .titulo_fechas{
+        font-size: 18px;
+    }
+    /* Media Query para el footer */
+    span {
+        font-size: 12px;
+    }
+
+    .footeredsocial {
+        height: 30px;
+        width: 30px;
+    }
+
     
 }
