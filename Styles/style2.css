@@ -6,7 +6,7 @@
 }
 
 body {
-    min-height: 80vh;
+    min-height: 100vh;
     font-family: 'Roboto Slab', serif;
     font-size: 1em;
     margin: 2px;
@@ -638,12 +638,17 @@ form legend {
     }
     .imagenes {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .imagenes img{
+       display: flex;
+       justify-content: space-evenly;
         flex-wrap: wrap;
         border: none;
-        width: 60%;
+        width: 100px;
+        height: 100px;
+        margin-left: 35%;
+        
     }
    
 
