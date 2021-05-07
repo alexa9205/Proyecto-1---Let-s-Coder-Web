@@ -25,10 +25,7 @@ body {
     background-color: black;
 }
 
-.opcion
-
-/*hijo*/
-    {
+.opcion {
     width: 100px;
     height: 58px;
     text-align: center;
@@ -225,13 +222,6 @@ button {
     text-align: center;
     border: 16px groove rgb(0, 42, 105);
     padding: 2px;
-}
-
-@media screen and (max-width: 800px) {
-    h2 {
-        font-size: 18pt;
-        color: blue;
-    }
 }
 
 /* Conocenos - Mentores */
@@ -638,16 +628,17 @@ form legend {
     }
     .imagenes {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
     .imagenes img{
-       display: flex;
-       justify-content: space-evenly;
-        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
         border: none;
         width: 100px;
         height: 100px;
-        margin-left: 35%;
+        margin-top: -2%;
+        
         
     }
    
@@ -812,16 +803,17 @@ form legend {
     }
     
     .opcion{
-        height: 30px;
-        line-height: 10px;
-        font-size: 8pt;
+        width: 80px;
+        height: 40px;
+        line-height: 5px;
+        font-size: 10px;
     }
   
     header .logo{
         display: none;
     }
     header h1{
-        font-size: 22px;
+        font-size: 24px;
     }
     .titulo_fechas{
         font-size: 18px;
@@ -834,6 +826,7 @@ form legend {
     .footeredsocial {
         height: 30px;
         width: 30px;
+        margin: 30px;
     }
 
     
