@@ -645,10 +645,10 @@ form legend {
 
 
     /* media querys conocenos.html */
-    .imagen_mentor_circulo {
-        height: 100px;
-        width: 100px;
-        margin-top: 30%;
+    .mentores img{
+        height: 200px;
+        width: 200px;
+        margin-top: 5%;
         margin-left: 10%; 
     }
 
@@ -665,16 +665,17 @@ form legend {
     .mentor1,
     .mentor2,
     .mentor3 {
-        font-size: 12pt;
+        font-size: 15px;
         color: rgb(18, 3, 83);
-        margin-bottom: -10%;
+        text-align: center;
+        
     }
 
     .descripcion_mentor1,
     .descripcion_mentor2,
     .descripcion_mentor3 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: auto;
+        font-size: 15px;
     }
 
     .info_mentores {
@@ -828,6 +829,7 @@ form legend {
         width: 30px;
         margin: 30px;
     }
+    
 
     
 }
